@@ -12,9 +12,19 @@
 			"addCondaForge": true,
 			"version": "latest"
 		},
-		"ghcr.io/devcontainers-community/features/llvm:3": {}
-	}
-
+		"ghcr.io/devcontainers-community/features/llvm:3": { }
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"charliermarsh.ruff",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-extension-pack"
+			]
+		}
+	},
+	"postCreateCommand": "pip install -r requirements.txt"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
